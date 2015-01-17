@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home Page</title>
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<title>Wesley Nash</title>
 </head>
 <body>
-	<h1>Hello World</h1>
-	<p>I'm hosted with GitHub Pages</p>
+	<h1>Wesley Nash</h1>
+	<dl class="tabs" data-tab>
+		<dd class="active"><a href="#home">Tab 1</a></dd>
+		<dd><a href="#aboutTab">Tab 2</a></dd>
+		<dd><a href="#projectsTab">Tab 3</a></dd>
+		<dd><a href="#resumeTab">Tab 4</a></dd>
+	</dl>
+	<div class="tabs-content">
+		<div class="content active" id="home">
+			<p>Test Home Tab</p>
+		</div>
+		<div class="content" id="aboutTab">
+			<p>Test About Tab</p>
+		</div>
+		<div class="content" id="projectsTab">
+			<p>Test Projects Tab</p>
+		</div>
+		<div class="content" id="resumeTab">
+			<p>Test Resume Tab</p>
+		</div>
+	</div>
 </body>
 </html>
