@@ -7,25 +7,25 @@
 </head>
 <body>
 	<h1>Wesley Nash</h1>
-	<dl class="tabs" data-tab>
-		<dd class="active"><a href="#home">Tab 1</a></dd>
-		<dd><a href="#aboutTab">Tab 2</a></dd>
-		<dd><a href="#projectsTab">Tab 3</a></dd>
-		<dd><a href="#resumeTab">Tab 4</a></dd>
-	</dl>
-	<div class="tabs-content">
-		<div class="content active" id="home">
-			<p>Test Home Tab</p>
-		</div>
-		<div class="content" id="aboutTab">
-			<p>Test About Tab</p>
-		</div>
-		<div class="content" id="projectsTab">
-			<p>Test Projects Tab</p>
-		</div>
-		<div class="content" id="resumeTab">
-			<p>Test Resume Tab</p>
-		</div>
-	</div>
+	<ul class="tabs" data-tab role="tablist">
+  <li class="tab-title active" role="presentational" ><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Tab 1</a></li>
+  <li class="tab-title" role="presentational" ><a href="#panel2-2" role="tab" tabindex="0"aria-selected="false" controls="panel2-2">Tab 2</a></li>
+  <li class="tab-title" role="presentational"><a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" controls="panel2-3">Tab 3</a></li>
+  <li class="tab-title" role="presentational" ><a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" controls="panel2-4">Tab 4</a></li>
+</ul>
+<div class="tabs-content">
+  <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
+    <h2>First panel content goes here...</h2>
+  </section>
+  <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
+    <h2>Second panel content goes here...</h2>
+  </section>
+  <section role="tabpanel" aria-hidden="true" class="content" id="panel2-3">
+    <h2>Third panel content goes here...</h2>
+  </section>
+  <section role="tabpanel" aria-hidden="true" class="content" id="panel2-4">
+    <h2>Fourth panel content goes here...</h2>
+  </section>
+</div>
 </body>
 </html>
