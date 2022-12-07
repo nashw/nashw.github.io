@@ -1,6 +1,6 @@
-document.onload(() => {
+document.onload = function() {
     p = document.getElementById("test-p");
-})
+}
 
 counter = 0;
 
