@@ -1,3 +1,5 @@
+p = null;
+
 document.onload = function() {
     p = document.getElementById("test-p");
 }
