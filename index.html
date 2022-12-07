@@ -8,7 +8,32 @@
 </head>
 <body>
 	<h1>Lizzy's Birthday Technical Challenge!</h1>
-  <p id="test-p">0</p>
-  <button onclick="test()">Testing</button>
+  <h2>Paris-Brest Pastry</h2>
+  <ol>
+    <li>
+      <h3>Make the praline paste</h3>
+      <button id="hint-praline-button" onclick="hintPraline()">Hint</button>
+      <div id="hint-praline" hidden>
+        <p>Do better</p>
+        <button onclick="detailsPraline()">More details</button>
+      </div>
+      <div id="details-praline" hidden>
+        <p>Do more better</p>
+        <button onclick="fullDetails()">Full details</button>
+      </div>
+      <div id="full-praline" hidden>
+        <p>Cheater!</p>
+      </div>
+    </li>
+    <li>
+      <h3>Make the choux</h3>
+    </li>
+    <li>
+      <h3>Make the creme mousseline</h3>
+    </li>
+    <li>
+      <h3>Assemble the pastry</h3>
+    </li>
+  </ol>
 </body>
 </html>
