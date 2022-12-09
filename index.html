@@ -8,52 +8,154 @@
 </head>
 <body>
 	<h1>Lizzy's Birthday Technical Challenge!</h1>
-  <h2>Paris-Brest Pastry</h2>
+  <h2>Bossche Bollen</h2>
+  <p>A Bossche bol is a Dutch pastry of choux, whipped cream, and chocolate. Paul and Prue (aka Tater and Twinkie) would like you to make 12 identical bollen</p>
   <ol>
     <li>
-      <h3>Make the praline paste</h3>
-      <button id="hint-praline-button" onclick="hintPraline()">Hint</button>
-      <div id="hint-praline" hidden>
-        <p>Do better</p>
-        <button onclick="detailsPraline()">More details</button>
-      </div>
-      <div id="details-praline" hidden>
-        <p>Do more better</p>
-        <button onclick="fullPraline()">Full details</button>
-      </div>
-      <div id="full-praline" hidden>
-        <p>Cheater!</p>
-      </div>
-    </li>
-    <li>
       <h3>Make the choux</h3>
-      <button id="hint-choux-button" onclick="hintChoux()">Hint</button>
-      <div id="hint-choux" hidden>
-        <p>Do better</p>
-        <button onclick="detailsChoux()">More details</button>
-      </div>
-      <div id="details-choux" hidden>
-        <p>Do more better</p>
-        <button onclick="fullChoux()">Full details</button>
-      </div>
-      <div id="full-choux" hidden>
-        <p>Cheater!</p>
-      </div>
+      <p>Use 120 g flour</p>
+      <table>
+        <tr>
+          <th>Ingredients</th>
+          <th>Instructions</th>
+        </tr>
+        <tr>
+          <td>
+            <div id="ing-hid-choux">
+              <button onclick="ingItmChoux()">Show items</button>
+            </div>
+            <div id="ing-itm-choux" hidden>
+              <button onclick="ingAmtChoux()">Show amounts</button>
+              <ul>
+                <li>Water</li>
+                <li>Butter</li>
+                <li>Sugar</li>
+                <li>Salt</li>
+                <li>Flour</li>
+                <li>Eggs</li>
+              </ul>
+            </div>
+            <div id="ing-amt-choux" hidden>
+              <button onclick="ingHidChoux()">Hide ingredients</button>
+              <ul>
+                <li>1 cup water</li>
+                <li>6 tbsp butter, cut into 1/2 inch cubes</li>
+                <li>2 tsp sugar</li>
+                <li>1/2 tsp salt</li>
+                <li>4 oz (120 g) all-purpose flour</li>
+                <li>4 eggs</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div id="hid-choux">
+              <button onclick="hintChoux()">Hint</button>
+            </div>
+            <div id="hint-choux" hidden>
+              <button onclick="detailsChoux()">More details</button>
+              <p>You don't know how to make choux and you call yourself a baker?! C'mon! What would Paul Hollywood say?</p>
+            </div>
+            <div id="details-choux" hidden>
+              <button onclick="fullChoux()">Full instructions</button>
+              <ul>
+                <li>Bring liquid ingredients to a boil</li>
+                <li>Remove from heat and add flour</li>
+                <li>Cook dough into a ball</li>
+                <li>Beat dough and add eggs</li>
+              </ul>
+            </div>
+            <div id="full-choux" hidden>
+              <p>Cheater!</p>
+              <button onclick="hideChoux()">Hide</button>
+              <ol>
+                <li>In a 3-quart stainless-steel saucier or saucepan, combine water (or milk), butter, sugar (if using), and salt.</li>
+                <li>Set over high and and cook until liquid comes to a rolling boil and butter has fully melted, about 2 minutes (the small butter cubes should be fully melted just about at the same time the liquid hits a strong boil).</li>
+                <li>Remove from heat and add flour. Using a wooden spoon or stiff silicone spatula, thoroughly mix in flour until no lumps remain (make sure to hunt down and smash out any stubborn ones).</li>
+                <li>Return saucepan to medium-high heat and cook, stirring very frequently, until dough registers 175°F (80°C) on an instant-read thermometer; if you don't have a thermometer, other signs the dough is ready include a thin starchy film forming all over the inside of the saucier and the dough pulling together into a cohesive mass.</li>
+                <li>Transfer dough to a stand mixer fitted with the paddle and beat at medium speed until dough registers 145°F on an instant-read thermometer (you need the dough cool enough that it doesn't cook the eggs when they hit it).</li>
+                <li>Add eggs one at a time, making sure each is fully beaten into the dough before adding the next; it can help to start the mixer at medium-low speed for the first egg and then increase the speed to medium once the choux batter begins to develop.</li>
+                <li>Scrape down sides of mixer bowl, then mix once more at medium speed just to ensure the choux batter is fully mixed, about 5 seconds.</li>
+              </ol>
+            </div>
+          </td>
+        </tr>
+      </table>
     </li>
     <li>
-      <h3>Make the creme mousseline</h3>
-      <button id="hint-creme-button" onclick="hintCreme()">Hint</button>
-      <div id="hint-creme" hidden>
-        <p>Do better</p>
-        <button onclick="detailsCreme()">More details</button>
-      </div>
-      <div id="details-creme" hidden>
-        <p>Do more better</p>
-        <button onclick="fullCreme()">Full details</button>
-      </div>
-      <div id="full-creme" hidden>
-        <p>Cheater!</p>
-      </div>
+      <h3>Make 12 dough balls and bake</h3>
+      <table>
+        <tr>
+          <td>
+            <button onclick="showTemp()">Show temperature</button>
+            <div id="show-temp" hidden>425</div>
+          </td>
+          <td>
+            <button onclick="showTime()">Show time</button>
+            <div id="show-time" hidden>20 minutes</div>
+          </td>
+        </tr>
+      </table>
+      <button onclick="proInstructions()">Pro move</button>
+      <div id="pro-instr" hidden>Transfer the choux paste to a piping bag fitted with a 3/8-inch or 1/2-inch round tip (9.5 - 12.5mm, Wilton 1A, or Ateco 804). Pipe 2 1/2-inch (6cm) diameter mounds about 3 inches apart, roughly 6 per baking tray.</div>
+    </li>
+    <li>
+      <h3>While choux is cooking, make the whipped cream</h3>
+      <p>Use 2 cups cream</p>
+      <table>
+        <tr>
+          <th>Ingredients</th>
+          <th>Instructions</th>
+        </tr>
+        <tr>
+          <td>
+            <div id="ing-hid-creme">
+              <button onclick="ingItmCreme()">Show items</button>
+            </div>
+            <div id="ing-itm-creme" hidden>
+              <button onclick="ingAmtCreme()">Show amounts</button>
+              <ul>
+                <li>Cream</li>
+                <li>Vanilla</li>
+                <li>Powdered sugar</li>
+              </ul>
+            </div>
+            <div id="ing-amt-creme" hidden>
+              <button onclick="ingHidCreme()">Hide ingredients</button>
+              <ul>
+                <li>2 cups cream</li>
+                <li>2 tsp vanilla extract</li>
+                <li>4 tbsp powdered sugar</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div id="hid-creme">
+              <button onclick="hintCreme()">Hint</button>
+            </div>
+            <div id="hint-creme" hidden>
+              <button onclick="detailsCreme()">More details</button>
+              <p>Uh... it's just regular whipped cream...</p>
+            </div>
+            <div id="details-creme" hidden>
+              <button onclick="fullCreme()">Full details</button>
+              <p>Mix ingredients and whipppp</p>
+            </div>
+            <div id="full-creme" hidden>
+              <p>Cheater!</p>
+              <button onclick="hideCreme()">Hint</button>
+              <p>In the bowl of a stand mixer fitted with the whisk attachment, or in a large mixing bowl with a hand mixer, whip the cream, confectioners’ sugar, and vanilla extract until thick.</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </li>
+    <li>
+      <h3>Make the chocolate glaze</h3>
+    </li>
+    <li>
+      <h3>Special note!</h3>
+      <button onclick="coolChoux()">Tap to reveal</button>
+      <div id="cool-choux" hidden>When choux is done cooking, prop oven door open and allow to cool slowly for 10 minutes</div>
     </li>
     <li>
       <h3>Assemble the pastry</h3>
