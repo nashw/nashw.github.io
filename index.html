@@ -10,6 +10,8 @@
 	<h1>Lizzy's Birthday Technical Challenge!</h1>
   <h2>Bossche Bollen</h2>
   <p>A Bossche bol is a Dutch pastry of choux, whipped cream, and chocolate. Paul and Prue (aka Tater and Twinkie) would like you to make 12 identical bollen</p>
+  <button onclick="moreDesc()">Better description</button>
+  <div id="more-desc" hidden>Bossche Bollen are essentially giant Dutch cream puffs filled with sweetened whipped cream and covered in a rich chocolate glaze.</div>
   <ol>
     <li>
       <h3>Make the choux</h3>
@@ -123,7 +125,7 @@
               <button onclick="ingHidCreme()">Hide ingredients</button>
               <ul>
                 <li>2 cups cream</li>
-                <li>2 tsp vanilla extract</li>
+                <li>1 tsp vanilla extract</li>
                 <li>4 tbsp powdered sugar</li>
               </ul>
             </div>
@@ -151,6 +153,52 @@
     </li>
     <li>
       <h3>Make the chocolate glaze</h3>
+      <p>Use two bars of chocolate</p>
+      <table>
+        <tr>
+          <th>Ingredients</th>
+          <th>Instructions</th>
+        </tr>
+        <tr>
+          <td>
+            <div id="ing-hid-choc">
+              <button onclick="ingItmChoc()">Show items</button>
+            </div>
+            <div id="ing-itm-choc" hidden>
+              <button onclick="ingAmtChoc()">Show amounts</button>
+              <ul>
+                <li>Cream</li>
+                <li>Chocolate</li>
+              </ul>
+            </div>
+            <div id="ing-amt-choc" hidden>
+              <button onclick="ingHidChoc()">Hide ingredients</button>
+              <ul>
+                <li>2/3 cup cream</li>
+                <li>8 oz chocolate, chopped</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div id="hid-choc">
+              <button onclick="hintChoc()">Hint</button>
+            </div>
+            <div id="hint-choc" hidden>
+              <button onclick="detailsChoc()">More details</button>
+              <p>Honestly there were so many different versions of the chocolate glaze, you'll probably make it better than the one I made. Maybe just do your ganache recipe?</p>
+            </div>
+            <div id="details-choc" hidden>
+              <button onclick="fullChoc()">Full details</button>
+              <p>Heat cream, stir in chocolate</p>
+            </div>
+            <div id="full-choc" hidden>
+              <p>Cheater!</p>
+              <button onclick="hideChoc()">Hint</button>
+              <p>Heat the cream on the stove to boiling, then pull it off the heat and stir in the chocolate. Let it melt, and stir the whole thing into a sauce. Let it cool for about 10 minutes or until lukewarm.</p>
+            </div>
+          </td>
+        </tr>
+      </table>
     </li>
     <li>
       <h3>Special note!</h3>
@@ -159,17 +207,32 @@
     </li>
     <li>
       <h3>Assemble the pastry</h3>
-      <button id="hint-assemble-button" onclick="hintAssemble()">Hint</button>
+      <div id="hid-assemble-button">
+        <button onclick="hintAssemble()">Hint</button>
+      </div>
       <div id="hint-assemble" hidden>
-        <p>Do better</p>
         <button onclick="detailsAssemble()">More details</button>
+        <p>Fill the choux with whipped cream and cover with chocolate glaze</p>
       </div>
       <div id="details-assemble" hidden>
-        <p>Do more better</p>
-        <button onclick="fullAssemble()">Full details</button>
+        <p>Cut a hole in the bottom of the choux and pipe in whipped cream. Cover with chocolate glaze.</p>
       </div>
       <div id="full-assemble" hidden>
         <p>Cheater!</p>
+        <button onclick="hideAssemble()">Full details</button>
+        <p>Cut a small X on the bottom of each choux. Transfer the cream filling into a piping bag. Fill each choux through the opening cut in the bottom. You will feel when they are full as the cream filling pushes out the sides of the pastry. Dip the tops of the choux pastries in the chocolate glaze coating them with a generous amount of the chocolate mixture. Or, set the bollen on a rack and slowly pour the chocolate over the top, one spoonful at a time</p>
+      </div>
+    </li>
+    <li>
+      <h3>Refrigerate until set</h3>
+    </li>
+    <li>
+      <h3>Final step</h3>
+      <button onclick="finalStep()">Click to reveal</button>
+      <div id="final-step" hidden>
+        <h1>
+          Jk no more steps, enjoy! Congrats, you've won Star Baker!
+        </h1>
       </div>
     </li>
   </ol>
