@@ -138,7 +138,7 @@ function fullAssemble(){
     document.getElementById("full-assemble").removeAttribute("hidden")
 }
 
-function fullAssemble(){
+function hideAssemble(){
     document.getElementById("full-assemble").setAttribute("hidden", "")
     document.getElementById("hid-assemble").removeAttribute("hidden")
 }
