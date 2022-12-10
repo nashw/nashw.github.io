@@ -9,7 +9,7 @@
 <body>
 	<h1>Lizzy's Birthday Technical Challenge!</h1>
   <h2>Bossche Bollen</h2>
-  <p>A Bossche bol is a Dutch pastry of choux, whipped cream, and chocolate. Paul and Prue (aka Tater and Twinkie) would like you to make 12 identical bollen</p>
+  <p>A Bossche bol is a Dutch pastry of choux, whipped cream, and chocolate. Paul and Prue (aka Tater and Twinkie) would like you to make 12 identical bollen.</p>
   <button onclick="moreDesc()">Better description</button>
   <div id="more-desc" hidden>Bossche Bollen are essentially giant Dutch cream puffs filled with sweetened whipped cream and covered in a rich chocolate glaze.</div>
   <ol>
@@ -144,7 +144,7 @@
             </div>
             <div id="full-creme" hidden>
               <p>Cheater!</p>
-              <button onclick="hideCreme()">Hint</button>
+              <button onclick="hideCreme()">Hide</button>
               <p>In the bowl of a stand mixer fitted with the whisk attachment, or in a large mixing bowl with a hand mixer, whip the cream, confectioners’ sugar, and vanilla extract until thick.</p>
             </div>
           </td>
@@ -193,7 +193,7 @@
             </div>
             <div id="full-choc" hidden>
               <p>Cheater!</p>
-              <button onclick="hideChoc()">Hint</button>
+              <button onclick="hideChoc()">Hide</button>
               <p>Heat the cream on the stove to boiling, then pull it off the heat and stir in the chocolate. Let it melt, and stir the whole thing into a sauce. Let it cool for about 10 minutes or until lukewarm.</p>
             </div>
           </td>
@@ -207,7 +207,7 @@
     </li>
     <li>
       <h3>Assemble the pastry</h3>
-      <div id="hid-assemble-button">
+      <div id="hid-assemble">
         <button onclick="hintAssemble()">Hint</button>
       </div>
       <div id="hint-assemble" hidden>
@@ -215,11 +215,12 @@
         <p>Fill the choux with whipped cream and cover with chocolate glaze</p>
       </div>
       <div id="details-assemble" hidden>
-        <p>Cut a hole in the bottom of the choux and pipe in whipped cream. Cover with chocolate glaze.</p>
+        <button onclick="fullAssemble()">Full details</button>
+        <p>Cut a hole in the bottom of the choux and pipe in whipped cream. Dip in chocolate glaze.</p>
       </div>
       <div id="full-assemble" hidden>
         <p>Cheater!</p>
-        <button onclick="hideAssemble()">Full details</button>
+        <button onclick="hideAssemble()">Hide</button>
         <p>Cut a small X on the bottom of each choux. Transfer the cream filling into a piping bag. Fill each choux through the opening cut in the bottom. You will feel when they are full as the cream filling pushes out the sides of the pastry. Dip the tops of the choux pastries in the chocolate glaze coating them with a generous amount of the chocolate mixture. Or, set the bollen on a rack and slowly pour the chocolate over the top, one spoonful at a time</p>
       </div>
     </li>
