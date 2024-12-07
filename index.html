@@ -8,14 +8,42 @@
 </head>
 <body>
 	<h1>Lizzy's Birthday Technical Challenge!</h1>
-  <h2>Bossche Bollen</h2>
-  <p>A Bossche bol is a Dutch pastry of choux, whipped cream, and chocolate. Paul and Prue (aka Tater and Twinkie) would like you to make 12 identical bollen.</p>
-  <button onclick="moreDesc()">Better description</button>
-  <div id="more-desc" hidden>Bossche Bollen are essentially giant Dutch cream puffs filled with sweetened whipped cream and covered in a rich chocolate glaze.</div>
+  <h2>Tarte Tatin</h2>
+  <p>A Tarte Tatin is a French pastry of caramel, apples, and puff pastry. Paul and Prue (aka Tater and Twinkie) would like you to make a beautiful, traditional tart.</p>
+  <div id="hid-desc">
+    <button onclick="moreDesc()">Better description <em>*SPOILER*</em></button>
+  </div>
+  <div id="more-desc" hidden>
+    <button onclick="hideDesc()">Hide</button>
+    <p>The trick with this tart is that it's baked upside-down. Bet you didn't see that coming!</p>
+  </div>
   <ol>
     <li>
-      <h3>Make the choux</h3>
-      <p>Use 120 g flour</p>
+      <h3>Prepare apples</h3>
+      <div id="hid-prep">
+        <button onclick="hintPrep()">Hint</button>
+      </div>
+      <div id="hint-prep" hidden>
+        <button onclick="hidePrep()">Hide</button>
+        <p>Peel, quarter, and core all the apples</p>
+      </div>
+    </li>
+    <li>
+      <h3>Tip</h3>
+      <div id="hid-oven">
+        <button onclick="hintOven()">Hint</button>
+      </div>
+      <div id="hint-oven" hidden>
+        <button onclick="tempOven()">Show temp</button>
+        <p>Preheat oven</p>
+      </div>
+      <div id="temp-oven" hidden>
+        <button onclick="hideOven()">Hide</button>
+        <p>Preheat oven to 400F</p>
+      </div>
+    </li>
+    <li>
+      <h3>Make caramel</h3>
       <table>
         <tr>
           <th>Ingredients</th>
@@ -23,214 +51,134 @@
         </tr>
         <tr>
           <td>
-            <div id="ing-hid-choux">
-              <button onclick="ingItmChoux()">Show items</button>
+            <div id="ing-hid-caramel">
+              <button onclick="ingItmCaramel()">Show items</button>
             </div>
-            <div id="ing-itm-choux" hidden>
-              <button onclick="ingAmtChoux()">Show amounts</button>
+            <div id="ing-itm-caramel" hidden>
+              <button onclick="ingAmtCaramel()">Show amounts</button>
               <ul>
-                <li>Water</li>
-                <li>Butter</li>
                 <li>Sugar</li>
-                <li>Salt</li>
-                <li>Flour</li>
-                <li>Eggs</li>
-              </ul>
-            </div>
-            <div id="ing-amt-choux" hidden>
-              <button onclick="ingHidChoux()">Hide ingredients</button>
-              <ul>
-                <li>1 cup water</li>
-                <li>6 tbsp butter, cut into 1/2 inch cubes</li>
-                <li>2 tsp sugar</li>
-                <li>1/2 tsp salt</li>
-                <li>4 oz (120 g) all-purpose flour</li>
-                <li>4 eggs</li>
-              </ul>
-            </div>
-          </td>
-          <td>
-            <div id="hid-choux">
-              <button onclick="hintChoux()">Hint</button>
-            </div>
-            <div id="hint-choux" hidden>
-              <button onclick="detailsChoux()">More details</button>
-              <p>You don't know how to make choux and you call yourself a baker?! C'mon! What would Paul Hollywood say?</p>
-            </div>
-            <div id="details-choux" hidden>
-              <button onclick="fullChoux()">Full instructions</button>
-              <ul>
-                <li>Bring liquid ingredients to a boil</li>
-                <li>Remove from heat and add flour</li>
-                <li>Cook dough into a ball</li>
-                <li>Beat dough and add eggs</li>
-              </ul>
-            </div>
-            <div id="full-choux" hidden>
-              <p>Cheater!</p>
-              <button onclick="hideChoux()">Hide</button>
-              <ol>
-                <li>In a 3-quart stainless-steel saucier or saucepan, combine water (or milk), butter, sugar (if using), and salt.</li>
-                <li>Set over high and and cook until liquid comes to a rolling boil and butter has fully melted, about 2 minutes (the small butter cubes should be fully melted just about at the same time the liquid hits a strong boil).</li>
-                <li>Remove from heat and add flour. Using a wooden spoon or stiff silicone spatula, thoroughly mix in flour until no lumps remain (make sure to hunt down and smash out any stubborn ones).</li>
-                <li>Return saucepan to medium-high heat and cook, stirring very frequently, until dough registers 175°F (80°C) on an instant-read thermometer; if you don't have a thermometer, other signs the dough is ready include a thin starchy film forming all over the inside of the saucier and the dough pulling together into a cohesive mass.</li>
-                <li>Transfer dough to a stand mixer fitted with the paddle and beat at medium speed until dough registers 145°F on an instant-read thermometer (you need the dough cool enough that it doesn't cook the eggs when they hit it).</li>
-                <li>Add eggs one at a time, making sure each is fully beaten into the dough before adding the next; it can help to start the mixer at medium-low speed for the first egg and then increase the speed to medium once the choux batter begins to develop.</li>
-                <li>Scrape down sides of mixer bowl, then mix once more at medium speed just to ensure the choux batter is fully mixed, about 5 seconds.</li>
-              </ol>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </li>
-    <li>
-      <h3>Make 12 dough balls and bake</h3>
-      <table>
-        <tr>
-          <td>
-            <button onclick="showTemp()">Show temperature</button>
-            <div id="show-temp" hidden>425</div>
-          </td>
-          <td>
-            <button onclick="showTime()">Show time</button>
-            <div id="show-time" hidden>20 minutes</div>
-          </td>
-        </tr>
-      </table>
-      <button onclick="proInstructions()">Pro move</button>
-      <div id="pro-instr" hidden>Transfer the choux paste to a piping bag fitted with a 3/8-inch or 1/2-inch round tip (9.5 - 12.5mm, Wilton 1A, or Ateco 804). Pipe 2 1/2-inch (6cm) diameter mounds about 3 inches apart, roughly 6 per baking tray.</div>
-    </li>
-    <li>
-      <h3>While choux is cooking, make the whipped cream</h3>
-      <p>Use 2 cups cream</p>
-      <table>
-        <tr>
-          <th>Ingredients</th>
-          <th>Instructions</th>
-        </tr>
-        <tr>
-          <td>
-            <div id="ing-hid-creme">
-              <button onclick="ingItmCreme()">Show items</button>
-            </div>
-            <div id="ing-itm-creme" hidden>
-              <button onclick="ingAmtCreme()">Show amounts</button>
-              <ul>
-                <li>Cream</li>
-                <li>Vanilla</li>
-                <li>Powdered sugar</li>
-              </ul>
-            </div>
-            <div id="ing-amt-creme" hidden>
-              <button onclick="ingHidCreme()">Hide ingredients</button>
-              <ul>
-                <li>2 cups cream</li>
-                <li>1 tsp vanilla extract</li>
-                <li>4 tbsp powdered sugar</li>
-              </ul>
-            </div>
-          </td>
-          <td>
-            <div id="hid-creme">
-              <button onclick="hintCreme()">Hint</button>
-            </div>
-            <div id="hint-creme" hidden>
-              <button onclick="detailsCreme()">More details</button>
-              <p>Uh... it's just regular whipped cream...</p>
-            </div>
-            <div id="details-creme" hidden>
-              <button onclick="fullCreme()">Full details</button>
-              <p>Mix ingredients and whipppp</p>
-            </div>
-            <div id="full-creme" hidden>
-              <p>Cheater!</p>
-              <button onclick="hideCreme()">Hide</button>
-              <p>In the bowl of a stand mixer fitted with the whisk attachment, or in a large mixing bowl with a hand mixer, whip the cream, confectioners’ sugar, and vanilla extract until thick.</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </li>
-    <li>
-      <h3>Make the chocolate glaze</h3>
-      <p>Use two bars of chocolate</p>
-      <table>
-        <tr>
-          <th>Ingredients</th>
-          <th>Instructions</th>
-        </tr>
-        <tr>
-          <td>
-            <div id="ing-hid-choc">
-              <button onclick="ingItmChoc()">Show items</button>
-            </div>
-            <div id="ing-itm-choc" hidden>
-              <button onclick="ingAmtChoc()">Show amounts</button>
-              <ul>
-                <li>Chocolate</li>
                 <li>Butter</li>
-                <li>Golden syrup</li>
-                <li>Cocoa Powder</li>
+                <li>Water (if necessary)</li>
               </ul>
             </div>
-            <div id="ing-amt-choc" hidden>
-              <button onclick="ingHidChoc()">Hide ingredients</button>
+            <div id="ing-amt-caramel" hidden>
+              <button onclick="ingHidCaramel()">Hide ingredients</button>
               <ul>
-                <li>8 oz chocolate, chopped</li>
-                <li>2 oz butter</li>
-                <li>4 oz (1/2 cup) golden syrup</li>
-                <li>1-2 tbsp cocoa Powder</li>
+                <li>3/4 cup sugar</li>
+                <li>4 tbsp butter</li>
+                <li>Water (as needed)</li>
               </ul>
             </div>
           </td>
           <td>
-            <div id="hid-choc">
-              <button onclick="hintChoc()">Hint</button>
+            <div id="hid-caramel">
+              <button onclick="hintCaramel()">Hint</button>
             </div>
-            <div id="hint-choc" hidden>
-              <button onclick="detailsChoc()">More details</button>
-              <p>Honestly there were so many different versions of the chocolate glaze, you'll probably make it better than the one I made. Maybe just do your ganache recipe? This one is a little more involved but IDK if better...</p>
+            <div id="hint-caramel" hidden>
+              <button onclick="detailsCaramel()">More details</button>
+              <p>Melt sugar first, then add butter</p>
             </div>
-            <div id="details-choc" hidden>
-              <button onclick="fullChoc()">Full details</button>
-              <p>Heat cream, stir in chocolate</p>
+            <div id="details-caramel" hidden>
+              <button onclick="fullCaramel()">Full details</button>
+              <p>Cook sugar until it turns dark amber, remove from heat, and whisk in butter</p>
             </div>
-            <div id="full-choc" hidden>
+            <div id="full-caramel" hidden>
               <p>Cheater!</p>
-              <button onclick="hideChoc()">Hide</button>
-              <p>Place a saucepan filled with an inch or two of water on the stove over medium-low heat. Place the chopped chocolate, butter, honey, and cocoa powder in a large heatproof bowl. Set the bowl over the saucepan, making sure the bottom of the bowl doesn't touch the water.</p>
-              <p>Melt the chocolate, stirring occasionally, until the butter is fully incorporated and the glaze is smooth.</p>
+              <button onclick="hideCaramel()">Hide</button>
+              <p>Pour sugar into skillet and place over medium-high heat and cook, without stirring, until sugar is partially liquefied, about 4 minutes. Whisk until all unmelted sugar disappears into the caramel and nudge the heat down to medium low. Cook until the sugar is dark amber, 1 to 2 minutes (about 350F to 370F). Remove from heat, immediately add butter and whisk to melt and combine. This will hold the color where it is.</p>
             </div>
           </td>
         </tr>
       </table>
     </li>
     <li>
-      <h3>Special note!</h3>
-      <button onclick="coolChoux()">Tap to reveal</button>
-      <div id="cool-choux" hidden>When choux is done cooking, prop oven door open and allow to cool slowly for 10 minutes</div>
-    </li>
-    <li>
-      <h3>Assemble the pastry</h3>
-      <div id="hid-assemble">
-        <button onclick="hintAssemble()">Hint</button>
+      <h3>Add apples</h3>
+      <div id="hid-apples">
+        <button onclick="hintApples()">Hint</button>
       </div>
-      <div id="hint-assemble" hidden>
-        <button onclick="detailsAssemble()">More details</button>
-        <p>Fill the choux with whipped cream and cover with chocolate glaze</p>
+      <div id="hint-apples" hidden>
+        <button onclick="fullApples()">Full instructions</button>
+        <p>Cook apples in caramel</p>
       </div>
-      <div id="details-assemble" hidden>
-        <button onclick="fullAssemble()">Full details</button>
-        <p>Cut a hole in the bottom of the choux and pipe in whipped cream. Dip in chocolate glaze.</p>
-      </div>
-      <div id="full-assemble" hidden>
+      <div id="full-apples" hidden>
         <p>Cheater!</p>
-        <button onclick="hideAssemble()">Hide</button>
-        <p>Cut a small X on the bottom of each choux. Transfer the cream filling into a piping bag. Fill each choux through the opening cut in the bottom. You will feel when they are full as the cream filling pushes out the sides of the pastry. Dip the tops of the choux pastries in the chocolate glaze coating them with a generous amount of the chocolate mixture. Or, set the bollen on a rack and slowly pour the chocolate over the top, one spoonful at a time</p>
+        <button onclick="hideApples()">Hide</button>
+        <p>Add the apples and cook over medium high heat. Cook, gently stirring and turning to ensure even cooking, until apples soften and begin to turn translucent at the edges and are about 3/4 of the way cooked through, about 10 minutes.</p>
       </div>
     </li>
     <li>
-      <h3>Refrigerate until set</h3>
+      <h3>Transfer to cake pan</h3>
+      <div id="hid-transfer">
+        <button onclick="hintTransfer()">Hint</button>
+      </div>
+      <div id="hint-transfer" hidden>
+        <button onclick="fullTransfer()">Full instructions</button>
+        <p>Arrange apples in pan, then pour caramel over apples</p>
+      </div>
+      <div id="full-transfer" hidden>
+        <p>Cheater!</p>
+        <button onclick="hideTransfer()">Hide</button>
+        <p>Using tongs, transfer apples, rounded side down, one at a time. Arrange them in a concentric circle around the outside, overlapping each apple by about 1/3 and purposely crowding them. Arrange remaining apples in the center of the ring. Pour any extra caramel in the skillet over the apples. Let this cool for 10 minutes.</p>
+      </div>
+    </li>
+    <li>
+      <h3>Add puff pastry</h3>
+      <div id="hid-puff">
+        <button onclick="hintPuff()">Hint</button>
+      </div>
+      <div id="hint-puff" hidden>
+        <button onclick="fullPuff()">Full instructions</button>
+        <p>Roll dough, cut out circle, and place over apples</p>
+      </div>
+      <div id="full-puff" hidden>
+        <p>Cheater!</p>
+        <button onclick="hidePuff()">Hide</button>
+        <p>Roll the dough and cut out a circle about one inch larger than the pan (use another pan as a guide). Top apples with the pastry round, tucking the edges in all around with a spatula.</p>
+      </div>
+      <div id="hid-pro-puff">
+        <button onclick="proPuff()">Pro tip!</button>
+      </div>
+      <div id="pro-puff" hidden>
+        <button onclick="hideProPuff()">Hide</button>
+        <p>Cut a vent or two in the center of the puff pastry.</p>
+      </div>
+    </li>
+    <li>
+      <h3>Bake</h3>
+      <p>Note: Put pan on a baking sheet to avoid any potential mess.</p>
+      <div id="hid-bake">
+        <button onclick="timeBake()">Show time</button>
+      </div>
+      <div id="time-bake" hidden>
+        <button onclick="hideBake()">Hide</button>
+        <p>35-40 minutes, or until the puff pastry is a deep golden brown on top and apples are bubbling around the edges.</p>
+      </div>
+    </li>
+    <li>
+      <h3>Plate the tart</h3>
+      <div id="hid-plate">
+        <button onclick="hintPlate()">Hint</button>
+      </div>
+      <div id="hint-plate" hidden>
+        <button onclick="fullPlate()">Full instructions</button>
+        <p>Allow to cool, then invert onto plate</p>
+      </div>
+      <div id="full-plate" hidden>
+        <p>Cheater!</p>
+        <button onclick="hidePlate()">Hide</button>
+        <p>Run a butter knife around the edges to loosen. Let cool on a wire rack for 15-30 minutes. To invert, top with a serving plate and grasp the pan and plate tightly together as a unit (wearing oven mitts if it is still warm) and flip quickly. Remove the pan. If any apples stick to the pan, just replace them where they should go on the tart.</p>
+      </div>
+    </li>
+    <li>
+      <h3>Serve</h3>
+      <div id="hid-serve">
+        <button onclick="hintServe()">Hint</button>
+      </div>
+      <div id="hint-serve" hidden>
+        <button onclick="hideServe()">Hide</button>
+        <p>With whipped cream or ice cream. Yummy!</p>
+      </div>
     </li>
     <li>
       <h3>Final step</h3>
