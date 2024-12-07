@@ -1,146 +1,161 @@
 function moreDesc(){
+    document.getElementById("hid-desc").setAttribute("hidden", "")
     document.getElementById("more-desc").removeAttribute("hidden")
 }
 
-function hintChoux(){
-    document.getElementById("hid-choux").setAttribute("hidden", "")
-    document.getElementById("hint-choux").removeAttribute("hidden")
+function hideDesc(){
+    document.getElementById("more-desc").setAttribute("hidden", "")
+    document.getElementById("hid-desc").removeAttribute("hidden")
 }
 
-function detailsChoux(){
-    document.getElementById("hint-choux").setAttribute("hidden", "")
-    document.getElementById("details-choux").removeAttribute("hidden")
+function hintPrep(){
+    document.getElementById("hid-prep").setAttribute("hidden", "")
+    document.getElementById("hint-prep").removeAttribute("hidden")
 }
 
-function fullChoux(){
-    document.getElementById("details-choux").setAttribute("hidden", "")
-    document.getElementById("full-choux").removeAttribute("hidden")
+function hidePrep(){
+    document.getElementById("hint-prep").setAttribute("hidden", "")
+    document.getElementById("hid-prep").removeAttribute("hidden")
 }
 
-function hideChoux(){
-    document.getElementById("full-choux").setAttribute("hidden", "")
-    document.getElementById("hid-choux").removeAttribute("hidden")
+function hintOven(){
+    document.getElementById("hid-oven").setAttribute("hidden", "")
+    document.getElementById("hint-oven").removeAttribute("hidden")
 }
 
-function ingItmChoux(){
-    document.getElementById("ing-hid-choux").setAttribute("hidden", "")
-    document.getElementById("ing-itm-choux").removeAttribute("hidden")
+function tempOven(){
+    document.getElementById("hint-oven").setAttribute("hidden", "")
+    document.getElementById("temp-oven").removeAttribute("hidden")
 }
 
-function ingAmtChoux(){
-    document.getElementById("ing-itm-choux").setAttribute("hidden", "")
-    document.getElementById("ing-amt-choux").removeAttribute("hidden")
+function hideOven(){
+    document.getElementById("temp-oven").setAttribute("hidden", "")
+    document.getElementById("hid-oven").removeAttribute("hidden")
 }
 
-function ingHidChoux(){
-    document.getElementById("ing-amt-choux").setAttribute("hidden", "")
-    document.getElementById("ing-hid-choux").removeAttribute("hidden")
+function hintCaramel(){
+    document.getElementById("hid-caramel").setAttribute("hidden", "")
+    document.getElementById("hint-caramel").removeAttribute("hidden")
 }
 
-function showTemp(){
-    document.getElementById("show-temp").removeAttribute("hidden")
+function detailsCaramel(){
+    document.getElementById("hint-caramel").setAttribute("hidden", "")
+    document.getElementById("details-caramel").removeAttribute("hidden")
 }
 
-function showTime(){
-    document.getElementById("show-time").removeAttribute("hidden")
+function fullCaramel(){
+    document.getElementById("details-caramel").setAttribute("hidden", "")
+    document.getElementById("full-caramel").removeAttribute("hidden")
 }
 
-function proInstructions(){
-    document.getElementById("pro-instr").removeAttribute("hidden")
+function hideCaramel(){
+    document.getElementById("full-caramel").setAttribute("hidden", "")
+    document.getElementById("hid-caramel").removeAttribute("hidden")
 }
 
-function hintCreme(){
-    document.getElementById("hid-creme").setAttribute("hidden", "")
-    document.getElementById("hint-creme").removeAttribute("hidden")
+function ingItmCaramel(){
+    document.getElementById("ing-hid-caramel").setAttribute("hidden", "")
+    document.getElementById("ing-itm-caramel").removeAttribute("hidden")
 }
 
-function detailsCreme(){
-    document.getElementById("hint-creme").setAttribute("hidden", "")
-    document.getElementById("details-creme").removeAttribute("hidden")
+function ingAmtCaramel(){
+    document.getElementById("ing-itm-caramel").setAttribute("hidden", "")
+    document.getElementById("ing-amt-caramel").removeAttribute("hidden")
 }
 
-function fullCreme(){
-    document.getElementById("details-creme").setAttribute("hidden", "")
-    document.getElementById("full-creme").removeAttribute("hidden")
+function ingHidCaramel(){
+    document.getElementById("ing-amt-caramel").setAttribute("hidden", "")
+    document.getElementById("ing-hid-caramel").removeAttribute("hidden")
 }
 
-function hideCreme(){
-    document.getElementById("full-creme").setAttribute("hidden", "")
-    document.getElementById("hid-creme").removeAttribute("hidden")
+function hintApples(){
+    document.getElementById("hid-apples").setAttribute("hidden", "")
+    document.getElementById("hint-apples").removeAttribute("hidden")
 }
 
-function ingItmCreme(){
-    document.getElementById("ing-hid-creme").setAttribute("hidden", "")
-    document.getElementById("ing-itm-creme").removeAttribute("hidden")
+function fullApples(){
+    document.getElementById("hint-apples").setAttribute("hidden", "")
+    document.getElementById("full-apples").removeAttribute("hidden")
 }
 
-function ingAmtCreme(){
-    document.getElementById("ing-itm-creme").setAttribute("hidden", "")
-    document.getElementById("ing-amt-creme").removeAttribute("hidden")
+function hideApples(){
+    document.getElementById("full-apples").setAttribute("hidden", "")
+    document.getElementById("hid-apples").removeAttribute("hidden")
 }
 
-function ingHidCreme(){
-    document.getElementById("ing-amt-creme").setAttribute("hidden", "")
-    document.getElementById("ing-hid-creme").removeAttribute("hidden")
+function hintTransfer(){
+    document.getElementById("hid-transfer").setAttribute("hidden", "")
+    document.getElementById("hint-transfer").removeAttribute("hidden")
 }
 
-function hintChoc(){
-    document.getElementById("hid-choc").setAttribute("hidden", "")
-    document.getElementById("hint-choc").removeAttribute("hidden")
+function fullTransfer(){
+    document.getElementById("hint-transfer").setAttribute("hidden", "")
+    document.getElementById("full-transfer").removeAttribute("hidden")
 }
 
-function detailsChoc(){
-    document.getElementById("hint-choc").setAttribute("hidden", "")
-    document.getElementById("details-choc").removeAttribute("hidden")
+function hideTransfer(){
+    document.getElementById("full-transfer").setAttribute("hidden", "")
+    document.getElementById("hid-transfer").removeAttribute("hidden")
 }
 
-function fullChoc(){
-    document.getElementById("details-choc").setAttribute("hidden", "")
-    document.getElementById("full-choc").removeAttribute("hidden")
+function hintPuff(){
+    document.getElementById("hid-puff").setAttribute("hidden", "")
+    document.getElementById("hint-puff").removeAttribute("hidden")
 }
 
-function hideChoc(){
-    document.getElementById("full-choc").setAttribute("hidden", "")
-    document.getElementById("hid-choc").removeAttribute("hidden")
+function fullPuff(){
+    document.getElementById("hint-puff").setAttribute("hidden", "")
+    document.getElementById("full-puff").removeAttribute("hidden")
 }
 
-function ingItmChoc(){
-    document.getElementById("ing-hid-choc").setAttribute("hidden", "")
-    document.getElementById("ing-itm-choc").removeAttribute("hidden")
+function hidePuff(){
+    document.getElementById("full-puff").setAttribute("hidden", "")
+    document.getElementById("hid-puff").removeAttribute("hidden")
 }
 
-function ingAmtChoc(){
-    document.getElementById("ing-itm-choc").setAttribute("hidden", "")
-    document.getElementById("ing-amt-choc").removeAttribute("hidden")
+function proPuff(){
+    document.getElementById("hid-pro-puff").setAttribute("hidden", "")
+    document.getElementById("pro-puff").removeAttribute("hidden")
 }
 
-function ingHidChoc(){
-    document.getElementById("ing-amt-choc").setAttribute("hidden", "")
-    document.getElementById("ing-hid-choc").removeAttribute("hidden")
+function hideProPuff(){
+    document.getElementById("pro-puff").setAttribute("hidden", "")
+    document.getElementById("hid-pro-puff").removeAttribute("hidden")
 }
 
-function coolChoux(){
-    document.getElementById("cool-choux").removeAttribute("hidden")
+function timeBake(){
+    document.getElementById("hid-bake").setAttribute("hidden", "")
+    document.getElementById("time-bake").removeAttribute("hidden")
 }
 
-function hintAssemble(){
-    document.getElementById("hid-assemble").setAttribute("hidden", "")
-    document.getElementById("hint-assemble").removeAttribute("hidden")
+function hideBake(){
+    document.getElementById("time-bake").setAttribute("hidden", "")
+    document.getElementById("hid-bake").removeAttribute("hidden")
 }
 
-function detailsAssemble(){
-    document.getElementById("hint-assemble").setAttribute("hidden", "")
-    document.getElementById("details-assemble").removeAttribute("hidden")
+function hintPlate(){
+    document.getElementById("hid-plate").setAttribute("hidden", "")
+    document.getElementById("hint-plate").removeAttribute("hidden")
 }
 
-function fullAssemble(){
-    document.getElementById("details-assemble").setAttribute("hidden", "")
-    document.getElementById("full-assemble").removeAttribute("hidden")
+function fullPlate(){
+    document.getElementById("hint-plate").setAttribute("hidden", "")
+    document.getElementById("full-plate").removeAttribute("hidden")
 }
 
-function hideAssemble(){
-    document.getElementById("full-assemble").setAttribute("hidden", "")
-    document.getElementById("hid-assemble").removeAttribute("hidden")
+function hidePlate(){
+    document.getElementById("full-plate").setAttribute("hidden", "")
+    document.getElementById("hid-plate").removeAttribute("hidden")
+}
+
+function hintServe(){
+    document.getElementById("hid-serve").setAttribute("hidden", "")
+    document.getElementById("hint-serve").removeAttribute("hidden")
+}
+
+function hideServe(){
+    document.getElementById("hint-serve").setAttribute("hidden", "")
+    document.getElementById("hid-serve").removeAttribute("hidden")
 }
 
 function finalStep(){
